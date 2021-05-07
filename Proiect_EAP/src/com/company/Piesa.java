@@ -13,6 +13,10 @@ public class Piesa {
         this.cantitate = cantitate;
     }
 
+    public int getPret() {
+        return pret;
+    }
+
     public int cost_total()
     {
         int cost_t=pret*cantitate;

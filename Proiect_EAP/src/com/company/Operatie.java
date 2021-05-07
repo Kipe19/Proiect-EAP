@@ -24,4 +24,15 @@ public class Operatie {
           System.out.println("Durata si costul operatiei :" + durata + " " +cost_manopera +"lei/h");
     }
 
+    public String getDenumire() {
+        return denumire;
+    }
+
+    public int getDurata() {
+        return durata;
+    }
+
+    public int getCost_manopera() {
+        return cost_manopera;
+    }
 }

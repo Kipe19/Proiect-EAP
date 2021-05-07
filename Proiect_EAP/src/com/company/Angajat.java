@@ -20,4 +20,16 @@ public class Angajat {
         System.out.println("Nume si prenume :"+nume+ " "+ prenume);
         System.out.println("Data angajarii: " + data_angajarii);
     }
+
+    public String getNume() {
+        return nume;
+    }
+
+    public String getPrenume() {
+        return prenume;
+    }
+
+    public String getData_angajarii() {
+        return data_angajarii;
+    }
 }

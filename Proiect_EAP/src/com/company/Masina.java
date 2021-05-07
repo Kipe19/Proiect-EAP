@@ -14,7 +14,21 @@ public class Masina {
     }
 
 
+    public String getMarca() {
+        return marca;
+    }
 
+    public String getModel() {
+        return model;
+    }
+
+    public String getAn_fab() {
+        return an_fab;
+    }
+
+    public String getCombustibil() {
+        return combustibil;
+    }
 
     public void print()
     {
