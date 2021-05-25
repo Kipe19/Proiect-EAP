@@ -19,7 +19,7 @@ import java.util.ArrayList;
                 String line = bufferedReader.readLine();
                 while ((line = bufferedReader.readLine()) != null) {
                     String[] strings = line.split(",");
-                    items.add(new Angajat(strings[0], strings[1], strings[2]));
+                    items.add(new Angajat(strings[0], strings[1], strings[2], strings[3]));
                 }
             } catch (IOException e) {
                 e.printStackTrace();

@@ -6,34 +6,47 @@ import java.time.Duration;
 public class Client
 {
     protected String nume;
-    protected String prenume;
-    protected String masina;
-    protected String data_intrare;
-    protected String data_iesire;
+    protected String cnp_client;
+    protected String nr_telefon;
 
-    public Client(String nume, String prenume, String masina, String data_intrare,  String data_iesire  )
+    public Client(String nume,String cnp_client, String nr_telefon  )
 
     {
         this.nume = nume;
-        this.prenume = prenume;
-        this.masina = masina;
-        this.data_iesire = data_iesire;
-        this.data_intrare = data_intrare;
+        this.cnp_client = cnp_client;
+        this.nr_telefon = nr_telefon;
     }
 
-   /* public float durata_service()
-    {
-        float durata = (float) (( data_iesire.getTime() - data_intrare.getTime()) / (1000*60*60*24));
-        return durata;
+
+    public String getNume() {
+        return nume;
     }
 
-    */
+    public void setNume(String nume) {
+        this.nume = nume;
+    }
+
+    public String getCnp_client() {
+        return cnp_client;
+    }
+
+    public void setCnp_client(String cnp_client) {
+        this.cnp_client = cnp_client;
+    }
+
+    public String getNr_telefon() {
+        return nr_telefon;
+    }
+
+    public void setNr_telefon(String nr_telefon) {
+        this.nr_telefon = nr_telefon;
+    }
 
     public void print()
     {
-        System.out.println("Nume si prenume :" + nume + " " + prenume );
-        System.out.println("Masina:"+ masina );
-        System.out.println("Data intrare : "+ data_intrare + " Data iesire : " + data_iesire );
+        System.out.println("Nume :" + nume );
+        System.out.println("CNP:"+ cnp_client );
+        System.out.println("Numar de telefon: "+ nr_telefon );
 
     }
 }

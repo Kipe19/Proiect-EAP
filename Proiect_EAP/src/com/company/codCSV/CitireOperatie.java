@@ -19,7 +19,7 @@ public class CitireOperatie {
             String line = bufferedReader.readLine();
             while ((line = bufferedReader.readLine()) != null) {
                 String[] strings = line.split(",");
-                items.add(new Operatie(strings[0],Integer.parseInt(strings[1]),Integer.parseInt(strings[2])));
+                items.add(new Operatie(strings[0],strings[1],strings[2],Integer.parseInt(strings[1]),Integer.parseInt(strings[2])));
             }
         } catch (IOException e) {
             e.printStackTrace();
