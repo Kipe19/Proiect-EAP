@@ -32,7 +32,7 @@ public class Add {
         try
         {
             Connection con = DriverManager.getConnection(url, username,password);
-            String query = "INSERT INTO operatii(id_operatie,tip_operatie,denumire_operatie, pret_manopera,durata VALUES ("+operatie.getId_operatie()+",'"+operatie.getTip_operatie()+"','"+operatie.getDenumire()+"','"+operatie.getCost_manopera()+"','"+operatie.getDurata()+"')";
+            String query = "INSERT INTO operatii(id_operatie,tip_operatie,denumire_operatie, pret_manopera,durata) VALUES ("+operatie.getId_operatie()+",'"+operatie.getTip_operatie()+"','"+operatie.getDenumire()+"',"+operatie.getCost_manopera()+","+operatie.getDurata()+")";
 
             PreparedStatement preparedStatement = con.prepareStatement(query);
             preparedStatement.executeUpdate();
@@ -47,7 +47,7 @@ public class Add {
         try
         {
             Connection con = DriverManager.getConnection(url, username,password);
-            String query = "INSERT INTO angajati(cnp_angajat, nume, calificare, data_angajarii VALUES ("+angajat.getCnp_angajat()+",'"+angajat.getNume()+",'"+angajat.getCalificare()+",'"+angajat.getData_angajarii()+",')";
+            String query = "INSERT INTO angajati(cnp_angajat, nume, calificare, data_angajarii) VALUES ("+angajat.getCnp_angajat()+",'"+angajat.getNume()+",'"+angajat.getCalificare()+",'"+angajat.getData_angajarii()+",')";
             PreparedStatement preparedStatement = con.prepareStatement(query);
             preparedStatement.executeUpdate();
             con.close();
@@ -61,7 +61,7 @@ public class Add {
         try
         {
             Connection con = DriverManager.getConnection(url, username,password);
-            String query = "INSERT INTO piesa(nr_oem,producator,denumire_piesa,pret_piesa VALUES ("+piesa.getNr_oem()+",'"+piesa.getProducator()+",'"+ piesa.getDenumire()+",'"+piesa.getPret()+",')";
+            String query = "INSERT INTO piesa(nr_oem,producator,denumire_piesa,pret_piesa) VALUES ("+piesa.getNr_oem()+",'"+piesa.getProducator()+",'"+ piesa.getDenumire()+",'"+piesa.getPret()+",')";
             PreparedStatement preparedStatement = con.prepareStatement(query);
             preparedStatement.executeUpdate();
 
